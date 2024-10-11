@@ -1,2 +1,10 @@
 # flaggame
-My first ever programming project, recovered
+My first ever programming project, recovered.
+
+In middle school, I started to learn Python. It was my first ever experience programming, and I immediately loved it. At that time, I started to build this flag game. It's nothing more than about 140 lines of Python code. It's something I look at now as something I could implement in under an hour (and at a much higher quality standard), but this program was my first ever real project, so to me it is special.
+
+I remember only vagely working on this program, and I remember consistently updating the `print()` with the most recent updated date. In the version I recovered (which I am quite confident was the latest version), this date is October 21st, 2017.
+
+Since that date, a folder in my Google drive has contained a PyInstaller `.exe` version of this program, but I had long lost the source code. Many times I'd see this in my drive and be disappointed I didn't have the source code for the first real program I ever wrote. I had heard that PyInstaller executables were little more than a wrapper around the underlying Python code, but never dug deeper until the day I am writing this. With a simple drag-and-drop online tool, [PyInstall Extractor](https://pyinstxtractor-web.netlify.app/), I was able to get the `.pyc` Python byte-code for the game. I was then able to use a python decompiler, [`uncompyle6`](https://pypi.org/project/uncompyle6/) to convert this to a rough `.py` with a few bugs. In searching for Python decompilation tools, I learned Python has very obtuse control flow which is hard to decompile. `uncompyle6` gave me the best result of any of the decompilers I found, and with a few small changes to how it nested `if-elif` statements, the program worked!
+
+This game is nothing special. It is a simple flag guessing game, but it is the first program I ever wrote, and I am glad to have the source for it again. 
